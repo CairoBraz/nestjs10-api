@@ -4,7 +4,7 @@ GET http://localhost:3000/prefixo/test
 GET http://localhost:3000/categories
 
 ###
-GET http://localhost:3000/categories/1
+GET http://localhost:3000/categories/4
 
 ###
 POST http://localhost:3000/categories
@@ -16,12 +16,13 @@ Content-Type: application/json
 }
 
 ###
-PATCH http://localhost:3000/categories/1
+PATCH http://localhost:3000/categories/4
+Content-Type: application/json
 
 {
-    "name":"Categoria teste",
-    "description":"descricao teste"
+    "name":"Categoria Update",
+    "description":"descricao Update"
 }
 
 ###
-DELETE http://localhost:3000/categories/1
+DELETE http://localhost:3000/categories/4
